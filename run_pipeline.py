@@ -72,6 +72,7 @@ with psycopg.connect(
                 expected_size = local_file.stat().st_size
 
                 s3 = boto3.client("s3")
+            
                 s3.upload_file(
                     str(local_file),
                     BUCKET,
@@ -87,6 +88,7 @@ with psycopg.connect(
                     raise RuntimeError(
                         "S3 file size does not match local file"
                     )
+
 
             # Only advance after upload verification
             cursor.execute("""
