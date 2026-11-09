@@ -1,0 +1,1 @@
+This project is all about ETL data processing and incremental loading with CDC
