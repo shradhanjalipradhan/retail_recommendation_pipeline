@@ -1,0 +1,14 @@
+[project]
+name = "retail-recommendation-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.43.126",
+    "botocore[crt]>=1.43.126",
+    "pandas>=3.1.1",
+    "psycopg[binary]>=3.3.8",
+    "pyarrow>=26.0.1",
+    "python-dotenv>=1.2.4",
+]
